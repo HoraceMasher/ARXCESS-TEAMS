@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arxcess Teams</title>
+    <link rel="stylesheet" href="teams.css">
+</head>
+<body>
+    <div class="container">
+        <div class="registration-section">
+          <h1>Team Leader Registration</h1>
+          <div class="registration-form">
+            <form id="team-leader-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required><br>
+                
+                <label for="middle-name">Middle Name:</label>
+                <input type="text" id="middle-name" name="middle-name" placeholder="......optional......"><br>
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required><br>
+                
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+
+              <label for="gender">Select your gender:</label>
+             <select id="gender" name="gender" required>
+             <option value="">--Please select--</option>
+             <option value="male">Male</option>
+             <option value="female">Female</option>
+             <option value="other">Other</option>
+               </select><br>
+
+               <label for="team-position">Team Position:</label>
+             <select id="team-position" name="team-position" required>
+             <option value="">--Please select--</option>
+             <option value="manager">Manager</option>
+             <option value="team-lead">Team Lead</option>
+             <option value="developer">Developer</option>
+             <option value="designer">Designer</option>
+             <option value="tester">Tester</option>
+              </select> <br>
+
+
+              <button type="submit">Register</button>
+            </form>
+          </div>
+        </div>
+        <div class="team-section">
+          <h1>Team Cards</h1>
+          <div id="team-cards"> </div>
+          <button id="showFormBtn">Show Form</button>
+        </div>
+      </div>
+      
+    <script src="teams.js"></script>
+</body>
+</html>
